@@ -71,7 +71,9 @@ public class CurrencyConverter extends QWidget {
 
     	//Initialize widgets
     	startEditText = new QLineEdit(this);
+    	startEditText.setAlignment(Qt.AlignmentFlag.AlignRight);
         endEditText = new QLineEdit(this);
+        endEditText.setReadOnly(true);
         convertButton = new QPushButton(this);
         reverseButton = new QPushButton(this);
         
